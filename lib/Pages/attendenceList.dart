@@ -106,6 +106,7 @@ class _attendenceListState extends State<attendenceList> {
           textColor: Colors.white,
           fontSize: 17.0);
       storeToSharedPrefs(data);
+      // getDataAPI();
     } else {
       Fluttertoast.showToast(
           msg: "Either your net is off or developers on vacations",
@@ -117,6 +118,48 @@ class _attendenceListState extends State<attendenceList> {
           fontSize: 17.0);
     }
   }
+
+  // getDataAPI() async {
+  //   var postBody = {
+  //       "id" : "1teqoNOsY8U4p1rVWgjkpPvUwCZxS45n6L1b1hVjin6o"
+  //   };
+  //   // var headers = {
+  //   //   'Content-Type': 'application/json',
+  //   // };
+  //   const url =
+  //       'https://script.google.com/macros/s/AKfycbwV14LYUrcrLpl4l62t9s4C8Iy1yDvUG2-MVVeypyQScN7xB_9Gzm-2vJcwgdQMoVS8vw/exec';
+  //   final uri = Uri.parse(url);
+  //   final response = await http.post(uri,body: jsonEncode(postBody), headers: {'Content-Type': 'Application/Json'});
+  //   // print(response.statusCode);
+  //   // print("postdata : " + json.toString());
+  //   print("object////////////////////////    " + response.statusCode.toString());
+  //   if (response.statusCode == 200 || response.statusCode == 302) {
+  //     final body = response.body;
+  //     print(body.toString());
+  //     // final json = jsonDecode(body);
+  //     setState(() {
+  //       // data = json;
+  //     });
+  //     Fluttertoast.showToast(
+  //         msg: "Data Loaded Successfully",
+  //         toastLength: Toast.LENGTH_SHORT,
+  //         gravity: ToastGravity.BOTTOM,
+  //         timeInSecForIosWeb: 3,
+  //         backgroundColor: Colors.green,
+  //         textColor: Colors.white,
+  //         fontSize: 17.0);
+  //     storeToSharedPrefs(data);
+  //   } else {
+  //     Fluttertoast.showToast(
+  //         msg: "Either your net is off or developers on vacations",
+  //         toastLength: Toast.LENGTH_SHORT,
+  //         gravity: ToastGravity.BOTTOM,
+  //         timeInSecForIosWeb: 4,
+  //         backgroundColor: Colors.red,
+  //         textColor: Colors.white,
+  //         fontSize: 17.0);
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
