@@ -430,7 +430,7 @@ class _logInPageState extends State<logInPage> {
                           fontSize: 17.0);
                     }else if(_code.text.toString() != "0000" && _code.text.toString() != "3113"){
                       Fluttertoast.showToast(
-                          msg: "Please contact developer to sign up",
+                          msg: "Please contact developer to signUp",
                           toastLength: Toast.LENGTH_SHORT,
                           gravity: ToastGravity.BOTTOM,
                           timeInSecForIosWeb: 2,
